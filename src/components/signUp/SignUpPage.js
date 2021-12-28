@@ -1,11 +1,9 @@
-import { useNavigate } from 'react-router-dom';
 import { Button, Conteiner, Content, Header, Input } from '../../styles/SignInAndSignUpStyle.js';
 
-export default function SignInPage() {
+export default function SignUpPage() {
 
-    const navigate = useNavigate();
-    function doLogIn() {
-
+    function doSignUp() {
+        
     }
     return (
         <Conteiner>
@@ -14,14 +12,15 @@ export default function SignInPage() {
                 <p> save, share and discover the best links on the web</p>
             </Header>
             <Content>
-                <form onSubmit={doLogIn}>
+                <form onSubmit={doSignUp}>
                     <Input placeholder='e-mail'></Input>
                     <Input placeholder='password'></Input>
-                    <Button type='submit'>Log In</Button>
+                    <Input placeholder='username'></Input>
+                    <Input placeholder='picture url'></Input>
+                    <Button type='submit'>Sign Up</Button>
                 </form>
-                <p onClick={() => navigate('/signup')}>First time? Create an account!</p>
+                <p>Switch back to log in</p>
             </Content>
         </Conteiner>
     )
 }
-
