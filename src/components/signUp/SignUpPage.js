@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { SignUpErrors } from '../../requestErrors/signUpErrors.js';
 import { postSignUp } from '../../services/api.services.js';
 import { Button, Conteiner, Content, Header, Input } from '../../styles/SignInAndSignUpStyle.js';
-import { validateEmail, validatePassword, validateUserName } from '../../validations/signUpValidations.js';
+import { validateEmail, validatePassword, validateUserName } from '../../validations/signUpAndSignInValidations.js';
 
 export default function SignUpPage() {
 

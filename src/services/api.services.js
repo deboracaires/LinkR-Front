@@ -6,6 +6,11 @@ function postSignUp(body) {
     return axios.post(`${url}sign-up`, body);
 }
 
+function postSignIn(body) {
+    return axios.post(`${url}sign-in`, body);
+}
+
 export {
     postSignUp,
+    postSignIn,
 }
